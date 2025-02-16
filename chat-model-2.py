@@ -3,7 +3,7 @@ from langchain_google_genai import GoogleGenerativeAI
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(override=True)
 api_key = os.getenv("API_KEY")
 
 model = GoogleGenerativeAI(model="gemini-pro", google_api_key=api_key)
